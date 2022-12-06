@@ -1,1 +1,3 @@
-console.log('Running as intended!');
+import pageLoad from "./modules/initial-page";
+
+pageLoad()

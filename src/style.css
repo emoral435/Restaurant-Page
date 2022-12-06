@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Whishholder";
+    src: url('/src/WhisholderRegular-L3EA5.ttf') format('truetype');
+}
+
+body {
+    background-image: url('/src/sky.png')
+}
+
+#content {
+    display: grid;
+    grid-template-rows: 3fr 2fr 10fr 1fr;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.7);
+}
+
+.neon {
+    transition: all .2s ease-in-out;
+}
+
+.neon:hover {
+    transform: scale(1.1);
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: black;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+button {
+    border-width: 1rem;
+    border-color: pink;
+    font-size: 3.4rem;
+    background-color: black;
+    color: pink;
+    font-family: 'Whishholder', sans-serif;
+}
+
+button:focus {
+    color: aqua;
+    border-color: aqua;
+}
+
+.footerDiv {
+    color: pink;
+    font-family: 'Whishholder', 'sans-serif';
+    font-size: 1.3rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    width: 85%;
+    height: 90%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    font-family: 'Whishholder', sans-serif;
+    color: pink;
+}
