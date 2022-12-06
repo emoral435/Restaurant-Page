@@ -44,7 +44,7 @@ export default function pageLoad() {
     let mainContent = makeDiv('mainContent');
     mainContent.classList.add('genericHeight');
     let header  = makeDiv('header');
-    header.textContent = 'About Us';
+    header.textContent = 'About Us'
     mainContent.append(header, homePage());
     main.append(mainContent);
     content.append(main);
