@@ -1,13 +1,13 @@
 import '../style.css';
 import homePage from './home-page'
 
+let makeDiv = (className) => {
+    const div = document.createElement('div');
+    div.classList.add(className);
+    return div;
+}
 
 export default function pageLoad() {
-    let makeDiv = (className) => {
-        const div = document.createElement('div');
-        div.classList.add(className);
-        return div;
-    }
 
     let makeButton = (classname) => {
         const btn = document.createElement('button');
@@ -24,7 +24,7 @@ export default function pageLoad() {
     img.classList.add('image', 'grow');
     img.src = '/src/images/burger.png'
     imageDiv.appendChild(img);
-    title.textContent = 'Retro Food';
+    title.textContent = 'Retro Restaurant';
     title.append(imageDiv);
     content.appendChild(title);
 
@@ -42,9 +42,10 @@ export default function pageLoad() {
     // this makes the first part of the webpage that someone sees when they first load the website
     let main = makeDiv('main');
     let mainContent = makeDiv('mainContent');
+    mainContent.classList.add('genericHeight');
     let header  = makeDiv('header');
     header.textContent = 'About Us';
-    mainContent.append(header);
+    mainContent.append(header, homePage());
     main.append(mainContent);
     content.append(main);
 
@@ -54,9 +55,13 @@ export default function pageLoad() {
     footerDiv.textContent = 'made by emoral435'
     let footerImg = new Image(120, 60);
     let footerTag = document.createElement('a');
+    footerTag.href = 'https://github.com/emoral435'
+    footerTag.target = '_blank';
     footerImg.classList.add('image', 'neon');
     footerImg.src = '/src/images/Nyan-Cat-PNG.png'
     footerTag.appendChild(footerImg);
-    footer.append(footerDiv, footerImg)
+    footer.append(footerDiv, footerTag)
     content.append(footer)
 }
+
+export { makeDiv }

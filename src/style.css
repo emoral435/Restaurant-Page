@@ -8,8 +8,8 @@ body {
 }
 
 #content {
-    display: grid;
-    grid-template-rows: 3fr 2fr 10fr 1fr;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, .8);
 }
 
@@ -47,7 +47,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 button {
@@ -74,23 +73,56 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: 2px 2px rgb(190, 145, 152);
+    margin: 1rem 0rem;
+    height: 70vh;
 }
 
 .mainContent {
     width: 85%;
-    height: 90%;
     background-color: pink;
     border-left-style: solid;
     border-width: 1rem;
     border-color: rgb(190, 145, 152);
     opacity: 90%;
-    display: grid;
-    grid-template-rows: 1fr 8fr;
+    display: flex;
+    flex-direction: column;
+}
+
+.genericHeight {
+    height: 90%;
+}
+
+.menuHeight {
+    height: 50rem;
 }
 
 .header {
     font-family: 'Whishholder', sans-serif;
     font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+.homeSection {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.homeText {
+    font-size: 2.2rem;
+    padding: 0rem 2rem;
+}
+
+.alien,
+.fbi {
+    display: flex;
+    justify-content: center;
+    padding-right: 2rem;
+    padding-bottom: 8rem;
+    align-items: center;
 }
 
 .title {
@@ -100,5 +132,4 @@ button:hover {
     font-size: 7rem;
     font-family: 'Whishholder', sans-serif;
     color: pink;
-    height: 10rem;
 }
