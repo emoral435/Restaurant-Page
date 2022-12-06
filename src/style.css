@@ -60,7 +60,7 @@ button {
     font-family: 'Whishholder', sans-serif;
 }
 
-button:focus {
+button:hover {
     color: aqua;
     border-color: aqua;
 }
