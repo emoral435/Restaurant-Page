@@ -4,13 +4,12 @@
 }
 
 body {
-    background-image: url('/src/sky.png')
+    background-image: url('/src/images/sky.png')
 }
 
 #content {
     display: grid;
     grid-template-rows: 3fr 2fr 10fr 1fr;
-    height: 100vh;
     background-color: rgba(0, 0, 0, .8);
 }
 
@@ -34,7 +33,7 @@ body {
 }
 
 .neon:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 .nav {
@@ -80,6 +79,18 @@ button:hover {
 .mainContent {
     width: 85%;
     height: 90%;
+    background-color: pink;
+    border-left-style: solid;
+    border-width: 1rem;
+    border-color: rgb(190, 145, 152);
+    opacity: 90%;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.header {
+    font-family: 'Whishholder', sans-serif;
+    font-size: 5rem;
 }
 
 .title {
@@ -89,4 +100,5 @@ button:hover {
     font-size: 7rem;
     font-family: 'Whishholder', sans-serif;
     color: pink;
+    height: 10rem;
 }

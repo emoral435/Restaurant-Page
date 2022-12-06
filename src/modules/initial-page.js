@@ -22,7 +22,7 @@ export default function pageLoad() {
     let imageDiv = makeDiv('image');
     let img = new Image(120, 90);
     img.classList.add('image', 'grow');
-    img.src = '/src/burger.png'
+    img.src = '/src/images/burger.png'
     imageDiv.appendChild(img);
     title.textContent = 'Retro Food';
     title.append(imageDiv);
@@ -42,6 +42,9 @@ export default function pageLoad() {
     // this makes the first part of the webpage that someone sees when they first load the website
     let main = makeDiv('main');
     let mainContent = makeDiv('mainContent');
+    let header  = makeDiv('header');
+    header.textContent = 'About Us';
+    mainContent.append(header);
     main.append(mainContent);
     content.append(main);
 
@@ -52,7 +55,7 @@ export default function pageLoad() {
     let footerImg = new Image(120, 60);
     let footerTag = document.createElement('a');
     footerImg.classList.add('image', 'neon');
-    footerImg.src = '/src/Nyan-Cat-PNG.png'
+    footerImg.src = '/src/images/Nyan-Cat-PNG.png'
     footerTag.appendChild(footerImg);
     footer.append(footerDiv, footerImg)
     content.append(footer)
