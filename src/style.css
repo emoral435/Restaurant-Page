@@ -259,6 +259,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
+    border-bottom: dotted 2px;
 }
 
 .background>img,
