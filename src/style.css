@@ -110,13 +110,14 @@ button:hover {
 }
 
 .menuHeight {
-    height: 70rem;
+    height: 100%;
 }
 
 .menuSection {
     display: grid;
-    gap: 8rem;
-    grid-template-columns: repeat(autofit, minmax(300, 1fr));
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 2rem;
 }
 
 .header {
@@ -213,9 +214,13 @@ button:hover {
 }
 
 .background {
-    background-color: rgb(190, 145, 152);
     display: grid;
     justify-content: center;
     align-items: center;
+    background-color: rgb(190, 145, 152);
     padding: 1rem;
+    width: 320px;
+    height: 320px;
+    border-radius: 1rem;
+    border: solid .3rem;
 }

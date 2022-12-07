@@ -17,10 +17,12 @@ export default function menuPage() {
     let drink = new Image(156, 300)
     drink.src = '/src/images/drink.png'
     let picArr = [sushi, mcdy, drink, pizza, squid, deoxys]
-    for (let i =0; i < picArr.length; i++) {
+    for (let i = 0; i < picArr.length; i++) {
         let background = makeDiv('background')
-        background.dataset.id = toString(i)
-        background.append(picArr[i])
+        background.dataset.id = i
+        let flexDiv = makeDiv('flexDiv')
+        flexDiv.append(picArr[i])
+        background.append(flexDiv)
         menuDiv.append(background)
     }
     return menuDiv;
