@@ -9,7 +9,7 @@ export default function contactPage() {
     let phoneTitle = makeDiv('phoneTitle')
     phoneTitle.textContent = 'Phone Numbers'
     let phoneImg = new Image(150, 120);
-    phoneImg.src = '/src/images/phone.png'
+    phoneImg.src = 'src/images/phone.png'
     phoneImg.classList.add('phoneImg')
     phoneHeader.append(phoneTitle, phoneImg);
     phoneNum.append(phoneHeader);
@@ -27,7 +27,7 @@ export default function contactPage() {
     addressTitle.textContent = 'Addresses'
     let addressImg = new Image(200, 110)
     addressImg.classList.add('addressImg')
-    addressImg.src = '/src/images/map.png'
+    addressImg.src = 'src/images/map.png'
     addressHeader.append(addressImg, addressTitle)
     address.append(addressHeader)
     let announced = makeDiv('Announced')

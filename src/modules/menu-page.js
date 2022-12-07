@@ -5,17 +5,17 @@ export default function menuPage() {
     let menuDiv = makeDiv('menuSection');
     // define the six pictures
     let deoxys = new Image(300, 300)
-    deoxys.src = '/src/images/deoxys.png'
+    deoxys.src = 'src/images/deoxys.png'
     let sushi = new Image(300, 270)
-    sushi.src = '/src/images/sushi.png'
+    sushi.src = 'src/images/sushi.png'
     let pizza = new Image(300, 300)
-    pizza.src = '/src/images/pizza.png'
+    pizza.src = 'src/images/pizza.png'
     let squid = new Image(280, 300)
-    squid.src = '/src/images/squidward.png'
+    squid.src = 'src/images/squidward.png'
     let mcdy = new Image(300, 285)
-    mcdy.src = '/src/images/donaldmcdonald.png'
+    mcdy.src = 'src/images/donaldmcdonald.png'
     let drink = new Image(156, 300)
-    drink.src = '/src/images/drink.png'
+    drink.src = 'src/images/drink.png'
     let picArr = [sushi, mcdy, drink, pizza, squid, deoxys]
     let menuArr = ['Sushi', 'Burger Combo', 'Moon Drink',  'Little Ceasars Pizza', 'Squid..Ward?', 'Deoxys??']
     let priceArr = ['$11.99','$12.99','$2.99', '$5.99', '$499.99', "$???"]
