@@ -5,12 +5,12 @@ export default function homePage() {
     let homeSection = makeDiv('homeSection');
     // this is the fbi picture
     let fbi = new Image(120,120);
-    fbi.src = 'src/images/fbi.png'
+    fbi.src = './src/images/fbi.png'
     let fbiDiv = makeDiv('fbi')
     fbiDiv.append(fbi)
     // this loads the alien image
     let alien = new Image(120, 120);
-    alien.src = 'src/images/alien.png';
+    alien.src = './src/images/alien.png';
     let alienDiv = makeDiv('alien');
     alienDiv.append(alien);
     // this stores the text for the about us section
