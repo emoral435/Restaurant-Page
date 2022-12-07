@@ -22,7 +22,7 @@ export default function pageLoad() {
     let imageDiv = makeDiv('image');
     let img = new Image(120, 90);
     img.classList.add('image', 'grow');
-    img.src = '/src/images/burger.png'
+    img.src = 'src/images/burger.png'
     imageDiv.appendChild(img);
     title.textContent = 'Retro Restaurant';
     title.append(imageDiv);
