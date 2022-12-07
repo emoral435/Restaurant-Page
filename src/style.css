@@ -223,4 +223,54 @@ button:hover {
     height: 320px;
     border-radius: 1rem;
     border: solid .3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.background>img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.background>.content {
+    position: absolute;
+    inset: 0;
+    height: 30%;
+    font-size: 2rem;
+    padding: 1rem;
+    background: rgb(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background>img,
+.background>.content {
+    transition: 200ms ease-in-out;
+}
+
+.background:hover>.content.fade {
+    opacity: 1;
+}
+
+.background>.content.fade {
+    opacity: 0;
+}
+
+.background:hover {
+    border-color: aqua;
+}
+
+.background:hover>img.zoom {
+    transform: scale(1.1);
+}
+
+.background:hover>.content.slideBot {
+    transform: translateY(0);
+}
+
+.background>.content.slideBot {
+    transform: translateY(100%);
 }

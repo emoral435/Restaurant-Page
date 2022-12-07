@@ -18,11 +18,14 @@ export default function menuPage() {
     drink.src = '/src/images/drink.png'
     let picArr = [sushi, mcdy, drink, pizza, squid, deoxys]
     for (let i = 0; i < picArr.length; i++) {
+        picArr[i].classList.add('zoom')
         let background = makeDiv('background')
+        let text = makeDiv('content')
+        text.classList.add('fade', 'slideBot')
+        text.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
         background.dataset.id = i
-        let flexDiv = makeDiv('flexDiv')
-        flexDiv.append(picArr[i])
-        background.append(flexDiv)
+        background.append(picArr[i])
+        background.append(text)
         menuDiv.append(background)
     }
     return menuDiv;
