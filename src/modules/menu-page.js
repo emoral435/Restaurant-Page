@@ -17,12 +17,23 @@ export default function menuPage() {
     let drink = new Image(156, 300)
     drink.src = '/src/images/drink.png'
     let picArr = [sushi, mcdy, drink, pizza, squid, deoxys]
+    let menuArr = ['Sushi', 'Burger Combo', 'Moon Drink',  'Little Ceasars Pizza', 'Squid..Ward?', 'Deoxys??']
+    let priceArr = ['$11.99','$12.99','$2.99', '$5.99', '$499.99', "$???"]
+    let quoteArr = ['Now does this not remind you of the good days?', 'The classic combo, only better.', "This appears to be boba, but it also appears that we do not have the liscence to sell boba... go along with it.", "Only the best pizza sold in the Milky Way galaxy!", "We have no words for this terrible accident.", "A wild deoxys has appeared!"]
     for (let i = 0; i < picArr.length; i++) {
-        picArr[i].classList.add('zoom')
+        picArr[i].classList.add('zoom', 'blur')
         let background = makeDiv('background')
         let text = makeDiv('content')
         text.classList.add('fade', 'slideBot')
-        text.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse'
+        let textHeader = makeDiv('textHeader')
+        let textLeft = makeDiv('textLeft')
+        textLeft.textContent = menuArr[i] + '...'
+        let textRight = makeDiv('textRight')
+        textRight.textContent = priceArr[i]
+        textHeader.append(textLeft, textRight)
+        let textBody = makeDiv('textBody')
+        textBody.textContent = quoteArr[i]
+        text.append(textHeader, textBody)
         background.dataset.id = i
         background.append(picArr[i])
         background.append(text)

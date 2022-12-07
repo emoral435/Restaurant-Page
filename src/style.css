@@ -58,6 +58,7 @@ body {
     position: sticky;
     top: 0px;
     z-index: 1;
+    margin: 1.5rem 0rem;
 }
 
 .footer {
@@ -73,11 +74,13 @@ button {
     background-color: black;
     color: pink;
     font-family: 'Whishholder', sans-serif;
+    transition: 300ms ease-in-out;
 }
 
 button:hover {
     color: aqua;
     border-color: aqua;
+    transform: translateY(-1.2rem);
 }
 
 .footerDiv {
@@ -106,7 +109,7 @@ button:hover {
 }
 
 .genericHeight {
-    height: 35rem;
+    height: min-content;
 }
 
 .menuHeight {
@@ -135,7 +138,7 @@ button:hover {
 }
 
 .homeText {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
 }
 
 .alien,
@@ -154,6 +157,7 @@ button:hover {
     font-size: 7rem;
     font-family: 'Whishholder', sans-serif;
     color: pink;
+    padding: .7rem;
 }
 
 .contactSection {
@@ -237,13 +241,24 @@ button:hover {
 .background>.content {
     position: absolute;
     inset: 0;
-    height: 30%;
     font-size: 2rem;
     padding: 1rem;
     background: rgb(0, 0, 0, .4);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+}
+
+.content {
+    text-shadow: 1px 1px aqua;
+}
+
+.textHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .background>img,
@@ -273,4 +288,8 @@ button:hover {
 
 .background>.content.slideBot {
     transform: translateY(100%);
+}
+
+.background:hover>img.blur {
+    filter: blur(5px);
 }
