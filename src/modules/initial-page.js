@@ -22,7 +22,7 @@ export default function pageLoad() {
     let imageDiv = makeDiv('image');
     let img = new Image(120, 90);
     img.classList.add('image', 'grow');
-    img.src = './src/images/burger.png'
+    img.src = 'src/images/burger.png'
     imageDiv.appendChild(img);
     title.textContent = 'Retro Restaurant';
     title.append(imageDiv);
@@ -58,7 +58,7 @@ export default function pageLoad() {
     footerTag.href = 'https://github.com/emoral435'
     footerTag.target = '_blank';
     footerImg.classList.add('image', 'neon');
-    footerImg.src = '/src/images/Nyan-Cat-PNG.png'
+    footerImg.src = 'src/images/Nyan-Cat-PNG.png'
     footerTag.appendChild(footerImg);
     footer.append(footerDiv, footerTag)
     content.append(footer)
